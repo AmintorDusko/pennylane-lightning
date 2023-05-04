@@ -136,7 +136,7 @@ constexpr size_t count_unique(const std::array<T, size> &arr) {
     return res;
 }
 
-#if __cpp_lib_three_way_comparison >= 201907L
+// #if __cpp_lib_three_way_comparison >= 201907L
 /**
  * @brief Count the number of unique elements in the array.
  *
@@ -158,7 +158,7 @@ constexpr size_t count_unique(const std::array<T, size> &arr) {
     }
     return size - dup_cnt;
 }
-#endif
+// #endif
 
 /// @cond DEV
 namespace Internal {
